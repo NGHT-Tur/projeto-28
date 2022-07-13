@@ -60,7 +60,7 @@ function draw() {
         board2.body,
         playerArrows[i].body
       );
-      if (board1Collision.collided && board2Collision.collided) {
+      if (board1Collision.collided || board2Collision.collided) {
         score += 5;
       }
 
